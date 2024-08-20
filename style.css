@@ -1,0 +1,122 @@
+:root{
+    --bgColor : rgb(1, 63, 145);
+    --bgColor1 : rgb(22, 115, 158);
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    background-color: var(--bgColor1);
+}
+nav{
+    width: 100vw;
+    height: 60px;
+    background-color: var(--bgColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav span{
+    font-size: 30px;
+    margin: 0px 10px;
+    color: white;
+    font-family: cursive;
+}
+nav input{
+    width: 200px;
+    height: 40px;
+    margin: 0px 20px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    background-color: var(--bgColor);
+    border-bottom: 3px solid var(--bgColor1);
+    font-size: 20px;
+    color: white;
+}
+nav input::placeholder{
+    font-size: 20px;
+    color: white;
+}
+.container{
+    width: 100vw;
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container .main{
+    width: 75vw;
+    height: 30%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+}
+.container .main .info{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: auto;
+}
+.container .main .info .location{
+    font-size: 35px;
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+}
+.container .main .info .temperature{
+    font-size: 30px;
+    color: white;
+    width: 100%;
+    margin-top: 20px;
+}
+.container .main .info-pic{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+.container .main .info-pic .img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.container .main .info-pic .weather-type{
+    font-size: 1.5em;
+    color: white;
+}
+
+.container .forecast{
+    width: 75vw;
+    height: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-family: cursive;
+}
+.container .forecast .child{
+    color: white;
+    margin: 25px 0px 20px 50px;
+    font-size: 30px;
+}
+
+@media screen and (max-width : 500px){
+    nav span{
+        font-size: 20px;
+    }
+    .container .forecast .child{
+        font-size: 20px;
+    }
+}
